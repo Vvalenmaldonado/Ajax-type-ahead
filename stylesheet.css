@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(185, 144, 151);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+form{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 130px;
+}
+input{
+    height: 100px;
+    width: 550px;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+}
+
+input:focus{
+    outline-width: 0;
+    
+}
+.suggestions{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.suggestions li{
+    background-color: white;
+    list-style: none;
+    border-bottom: 1px solid #adadad;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+    padding: 25px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    
+
+      
+}
+.suggestions li:nth-child(even) { /*index par*/
+    transform: perspective(100px) rotateX(3deg) translateY(2px);
+    
+  }
+  .suggestions li:nth-child(odd) {/*index  impar*/
+    transform: perspective(100px) rotateX(-3deg) translateY(2.5px);
+    
+  }
+
+  .hl{
+      background-color: pink;
+  }
+  
